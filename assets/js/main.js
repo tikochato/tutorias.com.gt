@@ -129,14 +129,58 @@
 
 			}
 
+		// Scrolly.
+			$('.scrolly').scrolly({
+				speed: 1000
+			});
+
+
+			// Spotlights.
+			$('.spotlights')
+				.scrollex({
+					mode: 'middle',
+					top: '-10vh',
+					bottom: '-10vh',
+					initialize: function() {
+
+						// Deactivate section.
+							if (skel.canUse('transition'))
+								$(this).addClass('inactive');
+
+					},
+					enter: function() {
+
+						// Activate section.
+							$(this).removeClass('inactive');
+
+					}
+				})
+				.each(function() {
+
+					var	$this = $(this),
+						$image = $this.find('.image'),
+						$img = $image.find('img'),
+						x;
+
+					// Assign image.
+						$image.css('background-image', 'url(' + $img.attr('src') + ')');
+
+					// Set background position.
+						if (x = $img.data('position'))
+							$image.css('background-position', x);
+
+					// Hide <img>.
+						$img.hide();
+
+				});
 
 			// Features.
 			if (skel.canUse('transition'))
 				$('.features')
 					.scrollex({
 						mode: 'middle',
-						top: '-40vh',
-						bottom: '-40vh',
+						top: '-50vh',
+						bottom: '-50vh',
 						initialize: function() {
 
 							// Deactivate section.
@@ -148,7 +192,11 @@
 							// Activate section.
 								$(this).removeClass('inactive');
 
-						}
+						},
+						leave: function() {
+							// Deactivate section.
+								$(this).addClass('inactive');
+						},
 					});
 
 	});

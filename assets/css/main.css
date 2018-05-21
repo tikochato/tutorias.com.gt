@@ -3822,6 +3822,26 @@
 		margin: 0 auto;
 	}
 
+	.wrapper.fade-up > .inner {
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+			transition: opacity 1s ease, transform 1s ease;
+			opacity: 1.0;
+		}
+
+		.wrapper.fade-up.inactive > .inner, body.is-loading .wrapper.fade-up > .inner {
+			opacity: 0;
+			-moz-transform: translateY(1em);
+			-webkit-transform: translateY(1em);
+			-ms-transform: translateY(1em);
+			transform: translateY(1em);
+		}
+
 		@media screen and (max-width: 480px) {
 
 			#wrapper {
