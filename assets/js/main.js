@@ -129,10 +129,27 @@
 
 			}
 
-		// Scrolly.
-			$('.scrolly').scrolly({
-				speed: 1000
-			});
+
+			// Features.
+			if (skel.canUse('transition'))
+				$('.features')
+					.scrollex({
+						mode: 'middle',
+						top: '-40vh',
+						bottom: '-40vh',
+						initialize: function() {
+
+							// Deactivate section.
+								$(this).addClass('inactive');
+
+						},
+						enter: function() {
+
+							// Activate section.
+								$(this).removeClass('inactive');
+
+						}
+					});
 
 	});
 
