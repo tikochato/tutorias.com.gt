@@ -2699,7 +2699,7 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
-
+/*
 	footer.major {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2708,10 +2708,11 @@
 	}
 
 	footer.major section{
-		width: calc(100% + 2em);
+	-	width: calc(100% + 2em);
 		margin-left: 2em;
 		margin-right: 2em;
 	}
+	*/
 
 	@media screen and (max-width: 736px) {
 
@@ -3785,7 +3786,7 @@
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: center;
 				}
 
 		}
@@ -3896,6 +3897,100 @@ form .field.half {
 form .field label{
     text-align: left;
 }
+
+
+/* Split */
+
+.split {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	}
+
+		.split > * {
+			width: calc(50% - 2.5em);
+		}
+
+		.split > :nth-child(2n - 1) {
+			padding-right: 2.5em;
+			border-right: solid 1px rgba(255, 255, 255, 0.15);
+		}
+
+		.split > :nth-child(2n) {
+			padding-left: 2.5em;
+		}
+
+		.split.style1 > :nth-child(2n - 1) {
+			width: calc(66.66666% - 2.5em);
+		}
+
+		.split.style1 > :nth-child(2n) {
+			width: calc(33.33333% - 2.5em);
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			.split > * {
+				width: calc(50% - 2em);
+			}
+
+			.split > :nth-child(2n - 1) {
+				padding-right: 2em;
+			}
+
+			.split > :nth-child(2n) {
+				padding-left: 2em;
+			}
+
+			.split.style1 > :nth-child(2n - 1) {
+				width: calc(66.66666% - 2em);
+			}
+
+			.split.style1 > :nth-child(2n) {
+				width: calc(33.33333% - 2em);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.split {
+				display: block;
+			}
+
+				.split > * {
+					border-top: solid 1px rgba(255, 255, 255, 0.15);
+					margin: 4em 0 0 0;
+					padding: 4em 0 0 0;
+					width: 100% !important;
+				}
+
+				.split > :nth-child(2n - 1) {
+					border-right: 0;
+					padding-right: 0;
+				}
+
+				.split > :nth-child(2n) {
+					padding-left: 0;
+				}
+
+				.split > :first-child {
+					border-top: 0;
+					margin-top: 0;
+					padding-top: 0;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.split > * {
+				margin: 3em 0 0 0;
+				padding: 3em 0 0 0;
+			}
+
+		}
 
 .contacto {
 	display:flex;
