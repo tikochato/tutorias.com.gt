@@ -1623,11 +1623,18 @@
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: #9e9e9e;
+		/*
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
+		*/
+		background:url(images/bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1644,8 +1651,8 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		background-color: #9e9e9e;
+		color: rgba(24, 24, 24, 0.7);
 	}
 
 	body, input, select, textarea {
@@ -2872,6 +2879,7 @@
 						-ms-transform: scale(1);
 						transform: scale(1);
 						opacity: 1;
+						padding-bottom: 1em;
 					}
 
 			.features.inactive li .icon {
@@ -3182,7 +3190,7 @@
 
 				#header.alt .logo img {
 					display: block;
-					margin: 0 auto;
+					margin: 3.5em auto 3.5em auto;
 					max-width: 75%;
 				}
 
@@ -3264,10 +3272,10 @@
 		}
 
 		body.is-loading #header.alt .logo {
-			-moz-transform: scale(0.8) rotate(-30deg);
-			-webkit-transform: scale(0.8) rotate(-30deg);
-			-ms-transform: scale(0.8) rotate(-30deg);
-			transform: scale(0.8) rotate(-30deg);
+			-moz-transform: scale(0.8) rotate(-10deg);
+			-webkit-transform: scale(0.8) rotate(-10deg);
+			-ms-transform: scale(0.8) rotate(-10deg);
+			transform: scale(0.8) rotate(-10deg);
 		}
 
 /* Nav */
@@ -3997,4 +4005,8 @@ form .field label{
 	justify-content:center;
 	align-items:center;
 	height:100%;
+}
+
+.gray {
+	color: rgba(9, 4, 4, 0.7);
 }
