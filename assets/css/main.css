@@ -1,6 +1,5 @@
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
-
+@font-face { font-family: ArBonnie; src: url('../fonts/ARBONNIE.ttf'); }
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -16,6 +15,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		font-family: ArBonnie;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1623,18 +1623,11 @@
 	}
 
 	body {
-		background-color: #9e9e9e;
-		/*
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #5f4d93 15%, #26a0da 85%);
-		*/
-		background:url(images/bg.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+		background-color: #0077fc;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(180deg, #0077fc 15%, #acf6fd 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(180deg, #0077fc 15%, #acf6fd 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(180deg, #0077fc 15%, #acf6fd 85%);
+		background-image: url("images/overlay.png"), linear-gradient(180deg, #0077fc 15%, #acf6fd 85%);
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1651,12 +1644,12 @@
 /* Type */
 
 	body {
-		background-color: #9e9e9e;
-		color: rgba(24, 24, 24, 0.7);
+		background-color: #0077fc;
+		color: rgba(255, 255, 255, 0.65);
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "ArBonnie", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1665,7 +1658,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 16pt;
 			}
 
 		}
@@ -1673,7 +1666,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -1681,7 +1674,7 @@
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -1791,7 +1784,7 @@
 	code {
 		border-radius: 8px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
+		font-family: "ArBonnie", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1799,7 +1792,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "ArBonnie", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2411,6 +2404,7 @@
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
 		color: #ffffff;
+		font-size: 11pt;
 	}
 
 		.icon.alt:hover {
@@ -3190,7 +3184,7 @@
 
 				#header.alt .logo img {
 					display: block;
-					margin: 3.5em auto 3.5em auto;
+					margin: 1.5em auto 0em auto;
 					max-width: 75%;
 				}
 
@@ -3272,10 +3266,10 @@
 		}
 
 		body.is-loading #header.alt .logo {
-			-moz-transform: scale(0.8) rotate(-10deg);
-			-webkit-transform: scale(0.8) rotate(-10deg);
-			-ms-transform: scale(0.8) rotate(-10deg);
-			transform: scale(0.8) rotate(-10deg);
+			-moz-transform: scale(0.8) rotate(-50deg);
+			-webkit-transform: scale(0.8) rotate(-50deg);
+			-ms-transform: scale(0.8) rotate(-50deg);
+			transform: scale(0.8) rotate(-50deg);
 		}
 
 /* Nav */
@@ -4009,4 +4003,12 @@ form .field label{
 
 .gray {
 	color: rgba(9, 4, 4, 0.7);
+}
+
+.round{
+
+}
+
+.round img{
+		border-radius: 100%;
 }
