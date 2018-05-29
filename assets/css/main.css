@@ -1735,7 +1735,7 @@
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	h3 {
@@ -2670,7 +2670,7 @@
 	}
 
 		header.major h2 {
-			font-size: 2em;
+			font-size: 3em;
 		}
 
 			header.major h2:after {
@@ -3150,7 +3150,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 3em 5em 4em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3170,6 +3170,7 @@
 			}
 
 			#header.alt .logo {
+				/*
 				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
 				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
@@ -3178,6 +3179,7 @@
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
+				*/
 				display: block;
 				margin: 0 0 1.5em 0;
 			}
@@ -3282,7 +3284,7 @@
 		background-color: #ffffff;
 		color: #4e4747;
 		position: absolute;
-		width: 64em;
+		width: 51.2em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3290,6 +3292,7 @@
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		font-size: 20pt;
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3368,7 +3371,7 @@
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.5em 1em;
+			padding: 0.2em 0em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -4011,4 +4014,17 @@ form .field label{
 
 .round img{
 		border-radius: 100%;
+}
+
+.infoBanner{
+	font-family: sans-serif !important;
+	font-size: 0.8em;
+}
+
+.contactoBanner{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 100%;
+	padding-right: 5em;
 }
