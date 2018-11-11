@@ -3752,6 +3752,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		color: #09383f;
 		width: calc(100% + 2em);
 	}
 
@@ -3765,6 +3766,10 @@
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
+		}
+
+		#footer a:hover {
+			color: #0d6775;		
 		}
 
 		@media screen and (max-width: 1280px) {
