@@ -3904,6 +3904,11 @@ form .field.half {
     float: left;
 }
 
+form .field.third {
+	width: 33%;
+	float: left;
+}
+
 form .field label{
     text-align: left;
 }
