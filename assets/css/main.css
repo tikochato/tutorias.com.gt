@@ -4067,3 +4067,35 @@ form .field label{
 		margin-bottom: 0.8em;
 		padding: 0;
 	}
+
+
+	@media screen and (max-width: 980px) {
+
+		.counters li {
+			width: calc(50% - 2em);
+		}
+
+			.counters li:nth-child(3) {
+				margin-top: 3em;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.counters {
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+			.counters li {
+				width: 100%;
+				margin-left: 0;
+				margin-top: 2em;
+			}
+
+				.counters li:nth-child(2), .counters li:nth-child(3) {
+					margin-top: 2em;
+				}
+
+	}
