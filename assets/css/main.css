@@ -3865,7 +3865,7 @@
 body.dark #demo-header {
     background: #272d39;
     background: rgba(55, 61, 73, 0.975);
-    color: #fff;
+    color: rgba(247, 247, 247, 0.95);
     box-shadow: none;
 }
 #demo-header {
