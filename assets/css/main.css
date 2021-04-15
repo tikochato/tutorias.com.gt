@@ -4099,3 +4099,18 @@ form .field label{
 				}
 
 	}
+
+.listNoFormat {
+  list-style-type: none;
+	margin: 0 0 0 0;
+	padding-left: 0;
+}
+
+.listNoFormat li{
+	padding-left: 0;
+}
+
+.fbFrame {
+	border:none;
+	overflow:hidden;
+}

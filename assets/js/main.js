@@ -214,10 +214,10 @@
 					},
 					enter: function () {
 						console.log('enter counters')
-						experiencia.innerHTML = 15;
-						tutores.innerHTML = 14;
-						alumnos.innerHTML = 350;
-						horas.innerHTML = 4680;
+						experiencia.innerHTML = new Date().getFullYear() - 2005;
+						tutores.innerHTML = 18;
+						alumnos.innerHTML = 678;
+						horas.innerHTML = 8869;
 					},
 					leave: function () {
 						experiencia.innerHTML = 00;
