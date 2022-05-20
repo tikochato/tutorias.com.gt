@@ -213,7 +213,6 @@
 						horas.innerHTML = 0000;
 					},
 					enter: function () {
-						console.log('enter counters')
 						experiencia.innerHTML = new Date().getFullYear() - 2005;
 						tutores.innerHTML = 18;
 						alumnos.innerHTML = 678;

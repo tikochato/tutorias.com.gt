@@ -32,6 +32,10 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-797631179"></script>
 	<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-797631179');</script>
 
+	<!-- ReCaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="./assets/js/correctCaptcha.js" defer></script>
+
 	<!-- Event snippet for Vista de una página conversion page -->
 	<script> gtag('event', 'conversion', { 'send_to': 'AW-797631179/XzXjCLrsgOABEMvFq_wC' });</script>
 </head>
@@ -286,6 +290,7 @@
 					</header>
 					<footer class="style1 split">
 						<section>
+
 							<form method="post" action="mail.php">
 								<div class="field third">
 									<label for="name">Nombre</label>
@@ -304,9 +309,15 @@
 									<textarea name="message" id="message" rows="5"></textarea>
 								</div>
 								<ul class="actions">
-									<li><input value="Enviar Mensaje" class="button submit" type="submit"></li>
+									<li>
+										<div class="g-recaptcha" data-sitekey="6LfWQAYgAAAAAIypLQsJYoRHrDazkoDGBixuPVlK"
+											data-callback="correctCaptcha"></div>
+									</li>
+
+									<li><input id="submitForm" value="Enviar Mensaje" class="button submit" type="submit"></li>
 								</ul>
 							</form>
+
 						</section>
 						<section>
 							<div class="contacto">
